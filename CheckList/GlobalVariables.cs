@@ -1,10 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace CheckList
 {
-    public class GlobalVariables
+    public static class GlobalVariables
     {
-        public GlobalVariables()
-        {
-        }
+        public static List<CheckList.Models.Reminder> rList;
     }
 }

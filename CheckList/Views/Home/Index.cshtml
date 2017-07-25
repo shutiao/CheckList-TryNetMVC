@@ -1,7 +1,18 @@
-﻿@model CheckList.Models.Reminder
+﻿@model List<CheckList.Models.Reminder>
 <h2>Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2>
+<div>   
+    <form asp-action="Create">
+        <input name = "ReminderTitle" />
+        <input type = "submit" value = "Add Reminder" />
+    </form>
+</div>
+
 <div>
     <ul>
-	    <li>@Model.Statement</li>
+		@foreach (var item in Model)
+		{
+		    <label><li>@item.statement</li></label>
+		}
+	    
 	</ul>
 </div>

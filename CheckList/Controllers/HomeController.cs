@@ -9,11 +9,18 @@ namespace CheckList.Controllers
 {
     public class HomeController : Controller
     {
+        /*
         public ActionResult Index()
         {
-            var model = new CheckList.Models.Reminder();
-            model.Statement = "Hux";
-            return View("Index",model);
+            return View(Models.Reminder.GetAll());
         }
+        */
+
+		public ActionResult Index(String ReminderTitle)
+		{
+            Models.Reminder.Create(ReminderTitle);
+            return View(Models.Reminder.GetAll());
+		}
+		
     }
 }

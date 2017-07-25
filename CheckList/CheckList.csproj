@@ -72,6 +72,7 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Models\Reminder.cs" />
+    <Compile Include="GlobalVariables.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
