@@ -1,3 +1,2 @@
 # CheckList-TryNetMVC
-Explore MVC Design Pattern to create a web application
-Accept User Input, Save that Data to Memory.
+Explore MVC Design Pattern to create a web application which accept user Input and save that data to memory.
